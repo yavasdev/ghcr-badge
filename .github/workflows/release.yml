@@ -5,6 +5,9 @@ on:
     tags:
       - "v*.*.*"
 
+  # Allows you to manually trigger the sync from the GitHub Actions tab
+  workflow_dispatch:
+
 jobs:
   release:
     runs-on: ubuntu-latest
